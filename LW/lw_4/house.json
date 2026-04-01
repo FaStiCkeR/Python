@@ -1,0 +1,46 @@
+{
+  "cadastre_id": "398183471893",
+  "address": "or. Chișinău, str. Stefan cel Mare 110",
+  "building_type": "House",
+  "area_sq_m": 94.2,
+  "assessed_value_usd": 190231.2,
+  "floors": 2,
+  "owners": [
+    {
+      "name": "Ivan Cernigov",
+      "human_id": "2839647291023",
+      "birthdate": "28-01-2002"
+    }
+  ],
+  "rooms": {
+    "kitchen": {
+      "name": "Кухня",
+      "floor": 1,
+      "room_type": "kitchen_room",
+      "description": "Современная кухня",
+      "dimensions": {
+        "area_sq_m": 24.5,
+        "length_m": 6.0,
+        "width_m": 4.1,
+        "height_m": 2.7
+      },
+      "has_water_supply": true,
+      "stove_type": "electric",
+      "work_area": 3.0
+    },
+    "bedroom": {
+      "name": "Спальня",
+      "floor": 2,
+      "room_type": "bedroom",
+      "description": "Большая спальня",
+      "dimensions": {
+        "area_sq_m": 20.0,
+        "length_m": 5.0,
+        "width_m": 4.0,
+        "height_m": 2.7
+      },
+      "has_wardrobe": true,
+      "bed_size": null
+    }
+  }
+}
