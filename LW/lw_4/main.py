@@ -1,6 +1,6 @@
+import json
 from abc import ABC, abstractmethod
 from typing import List, Dict, Optional
-import json
 
 
 class DomainError(Exception):
@@ -10,6 +10,7 @@ class DomainError(Exception):
 
 class BuildingNotFoundError(DomainError):
     """Возникает, когда здание не найдено."""
+
     def __init__(self, cadastre_id: str):
         self.cadastre_id = cadastre_id
         super().__init__(f"Здание с кадастровым номером {cadastre_id} не найдено.")
@@ -17,6 +18,7 @@ class BuildingNotFoundError(DomainError):
 
 class RoomNotFoundError(DomainError):
     """Возникает, когда комната не найдена в доме."""
+
     def __init__(self, room_key: str, house_id: str = None):
         self.room_key = room_key
         self.house_id = house_id
@@ -28,6 +30,7 @@ class RoomNotFoundError(DomainError):
 
 class InvalidRoomTypeError(DomainError):
     """Возникает при попытке создать или добавить комнату недопустимого типа."""
+
     def __init__(self, room_type: str, allowed_types: List[str]):
         self.room_type = room_type
         self.allowed_types = allowed_types
@@ -505,7 +508,7 @@ if __name__ == "__main__":
     house.get_rooms_summary()
 
     # === Работа с JSON ===
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("=== Экспорт дома в JSON ===")
     json_str = house.to_json(indent=2)
     print(json_str)

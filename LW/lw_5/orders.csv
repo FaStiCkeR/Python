@@ -1,0 +1,6 @@
+order_id,order_date,customer_id,product_name,category,quantity,price_per_unit,discount_percent,status,distance_km
+1001,2025-03-15,C001,Ноутбук Acer Aspire 5,Электроника,1,45000.00,10.5,delivered,12.5
+1002,2025-03-15,C002,Футболка хлопковая,Одежда,2,1500.00,0,delivered,5.0
+1003,2025-03-16,C001,Мышь беспроводная,Электроника,1,2500.00,5.0,delivered,12.5
+1004,2025-03-16,C003,Книга "Python для начинающих",Книги,1,1200.00,0,returned,0
+1005,2025-03-17,C004,Смартфон Samsung Galaxy,Электроника,1,35000.00,15.0,delivered,8.2
