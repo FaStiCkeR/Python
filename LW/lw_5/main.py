@@ -1,15 +1,14 @@
 import calendar
 import math
-import re
-import tkinter as tk
-from datetime import datetime
-from tkinter import scrolledtext, messagebox, simpledialog, filedialog
 import os
+import re
 import subprocess
 import sys
+import tkinter as tk
+from datetime import datetime
+from tkinter import scrolledtext, messagebox, simpledialog
 
 import pandas as pd
-import sys
 from gtts import gTTS
 
 
@@ -277,6 +276,7 @@ def voice_report(report_text):
         print(f"Ошибка озвучивания: {e}")
         raise
 
+
 def play_report(filename='report.mp3'):
     """
         Открывает MP3-файл программой, ассоциированной в системе.
@@ -300,7 +300,6 @@ def play_report(filename='report.mp3'):
         print(f"Открываю: {filename}")
     except Exception as e:
         print(f"Не удалось открыть файл: {e}")
-        
 
 
 def main_interface():
@@ -326,7 +325,7 @@ def main_interface():
                     title="Дата рождения пользователя",
                     prompt="Введите свою дату рождения в формате YYYY-MM-DD:"
                 )
-                if birth_date_in_str is None:   # пользователь нажал Cancel
+                if birth_date_in_str is None:  # пользователь нажал Cancel
                     text_area.insert(tk.END, "Ввод даты рождения отменён.\n")
                     return
 
