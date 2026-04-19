@@ -1,0 +1,4 @@
+### GET request to example server
+GET localhost:8000/tasks?completed=false&limit=5&sort_by=priority
+
+###

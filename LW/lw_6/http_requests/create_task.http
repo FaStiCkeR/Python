@@ -1,0 +1,71 @@
+### Переменные (при необходимости замените хост/порт)
+@baseUrl = http://localhost:8000
+
+### 1. Успешное создание задачи (POST /tasks)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Изучить FastAPI",
+  "description": "Пройти раздел про Dependency Injection",
+  "priority": "high",
+  "completed": false,
+  "deadline": "2026-05-01T12:00:00"
+}
+
+### 2. Создание задачи без описания и дедлайна (используются значения по умолчанию)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Погулять с собакой",
+  "priority": "low"
+}
+
+### 3. Создание уже выполненной задачи (completed = true)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Сходить в магазин",
+  "description": "Купить хлеб и молоко",
+  "priority": "medium",
+  "completed": true,
+  "deadline": "2026-04-20T20:00:00"
+}
+
+### 4. Попытка создать дубликат (ожидается 400 Bad Request)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Изучить FastAPI",
+  "priority": "medium"
+}
+
+### 5. Невалидные данные: пустой title (ожидается 422 Validation Error)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "",
+  "priority": "high"
+}
+
+### 6. Невалидный приоритет (ожидается 422 Validation Error)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Важная задача",
+  "priority": "critical"
+}
+
+### 7. Дедлайн в прошлом (ожидается 422 Validation Error, если настроен валидатор)
+POST {{baseUrl}}/tasks
+Content-Type: application/json
+
+{
+  "title": "Просроченная задача",
+  "deadline": "2020-01-01T00:00:00"
+}
