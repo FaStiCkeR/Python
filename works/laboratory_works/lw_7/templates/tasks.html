@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>All Tasks</h1>
+
+<a href="/tasks?sort=priority">Sort by priority</a>
+
+<ul>
+    {% for task in tasks %}
+    <li>
+        <a href="/tasks/{{ task.id }}">
+            {{ task.title }}
+        </a>
+
+        | Priority: {{ task.priority }}
+
+        | <a href="/edit/{{ task.id }}">Edit</a>
+
+        | <a href="/delete/{{ task.id }}">Delete</a>
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

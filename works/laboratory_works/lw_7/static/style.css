@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, serif;
+    margin: 40px;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+input, textarea {
+    width: 300px;
+}

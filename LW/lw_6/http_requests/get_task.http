@@ -1,5 +1,0 @@
-### GET request to example server
-@task_id =2
-GET localhost:8000/tasks/{{task_id}}
-
-###

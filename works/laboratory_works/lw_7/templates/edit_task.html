@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Edit Task</h1>
+
+<form method="POST">
+
+    <input type="text" name="title" value="{{ task.title }}"><br><br>
+
+    <textarea name="description">{{ task.description }}</textarea><br><br>
+
+    <input type="text" name="category" value="{{ task.category }}"><br><br>
+
+    <input type="number" name="priority" value="{{ task.priority }}"><br><br>
+
+    <button type="submit">Save</button>
+
+</form>
+
+{% endblock %}

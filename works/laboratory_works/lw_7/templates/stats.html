@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Statistics</h1>
+
+<p>Total tasks: {{ total_tasks }}</p>
+
+<p>Average priority: {{ avg_priority }}</p>
+
+<h2>Tasks by category</h2>
+
+<ul>
+    {% for category in categories %}
+    <li>
+        {{ category.category }} :
+        {{ category.count }}
+    </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

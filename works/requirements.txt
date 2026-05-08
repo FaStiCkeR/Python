@@ -1,0 +1,5 @@
+pandas
+gtts
+fastapi
+uvicorn
+flask

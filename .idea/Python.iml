@@ -3,10 +3,11 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
-      <excludeFolder url="file://$MODULE_DIR$/LW/lw_5/.venv" />
-      <excludeFolder url="file://$MODULE_DIR$/LW/lw_6/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/works/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/works/laboratory_works/lw_5/.venv" />
+      <excludeFolder url="file://$MODULE_DIR$/works/laboratory_works/lw_6/.venv" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.14 (Python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.9 (Labs)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
