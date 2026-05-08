@@ -5,6 +5,7 @@ env/
 ENV/
 
 # Файлы IDE
+../.idea/
 .idea/
 .vscode/
 *.swp
