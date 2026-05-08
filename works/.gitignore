@@ -1,4 +1,25 @@
-.venv
-../.idea/
-../.DS_Store
+# Виртуальное окружение
+.venv/
+venv/
+env/
+ENV/
+
+# Файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
 .DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# База данных (раскомментируйте, если не хотите коммитить тестовую БД)
+# database.db
+
+# Файлы окружения (секретные ключи, конфигурация)
+.env
