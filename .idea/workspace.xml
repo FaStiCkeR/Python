@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28973e78-69f6-4be8-adf9-722ebc5452d8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/works/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="28973e78-69f6-4be8-adf9-722ebc5452d8" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +56,6 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/fasticker/PycharmProjects/Labs/works/individual_work",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
@@ -126,7 +123,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778226601668</updated>
-      <workItem from="1778226606920" duration="9869000" />
+      <workItem from="1778226606920" duration="10625000" />
     </task>
     <servers />
   </component>
