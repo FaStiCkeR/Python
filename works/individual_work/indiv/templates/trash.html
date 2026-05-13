@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Trash</h1>
+
+    {% if deleted %}
+        <table border="1" cellpadding="5">
+            <thead>
+            <tr>
+                <th>Title</th>
+                <th>Deleted at</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for task in deleted %}
+                <tr>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.deleted_at }}</td>
+                    <td>
+                        <a href="{{ url_for('restore_task', deleted_id=task.deleted_id) }}">Restore</a> |
+                        <a href="{{ url_for('delete_permanent', deleted_id=task.deleted_id) }}"
+                           onclick="return confirm('Delete permanently? This cannot be undone.');">Delete
+                            permanently</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>The trash is empty.</p>
+    {% endif %}
+
+    <br>
+    <a href="{{ url_for('tasks') }}">← Back to tasks</a>
+
+{% endblock %}

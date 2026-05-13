@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>All Tasks</h1>
+
+    <!-- Форма фильтрации и сортировки -->
+    <form method="get" action="{{ url_for('tasks') }}">
+        <label for="priority">Priority:</label>
+        <input type="number" id="priority" name="priority" min="1" max="5" value="{{ priority or '' }}">
+
+        <label for="sort">Sort by:</label>
+        <select id="sort" name="sort">
+            <option value="created_at" {% if sort == 'created_at' %}selected{% endif %}>Created (newest)</option>
+            <option value="priority" {% if sort == 'priority' %}selected{% endif %}>Priority (high first)</option>
+            <option value="due_date" {% if sort == 'due_date' %}selected{% endif %}>Due date (soonest first)</option>
+        </select>
+
+        <label for="per_page">Per page:</label>
+        <select id="per_page" name="per_page">
+            <option value="5" {% if per_page == 5 %}selected{% endif %}>5</option>
+            <option value="10" {% if per_page == 10 %}selected{% endif %}>10</option>
+            <option value="20" {% if per_page == 20 %}selected{% endif %}>20</option>
+        </select>
+
+        <button type="submit">Apply</button>
+    </form>
+
+    <br>
+
+    {% if tasks %}
+        <ul>
+            {% for task in tasks %}
+                <li>
+                    <a href="/tasks/{{ task.id }}">{{ task.title }}</a>
+                    | Priority: {{ task.priority }}
+                    | Due: {{ task.due_date if task.due_date else 'No deadline' }}
+                    | <a href="/edit/{{ task.id }}">Edit</a>
+                    | <a href="/delete/{{ task.id }}">Delete</a>
+                </li>
+            {% endfor %}
+        </ul>
+
+        <!-- Пагинация -->
+        <div>
+            {% if page > 1 %}
+                <a href="{{ url_for('tasks', page=page-1, per_page=per_page, sort=sort, priority=priority) }}">←
+                    Previous</a>
+            {% endif %}
+            Page {{ page }} of {{ total_pages }}
+            {% if page < total_pages %}
+                <a href="{{ url_for('tasks', page=page+1, per_page=per_page, sort=sort, priority=priority) }}">Next
+                    →</a>
+            {% endif %}
+        </div>
+
+    {% else %}
+        <p>No tasks found.</p>
+    {% endif %}
+
+{% endblock %}

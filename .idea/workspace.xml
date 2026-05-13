@@ -1,7 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28973e78-69f6-4be8-adf9-722ebc5452d8" name="Changes" comment="" />
+    <list default="true" id="28973e78-69f6-4be8-adf9-722ebc5452d8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/lw_7.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/raport.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/screen/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/add_task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/edit_task.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/stats.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/task_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/tasks.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/works/individual_work/indiv/templates/trash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/add_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/add_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/edit_task.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/edit_task.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/stats.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/stats.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/task_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/task_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/tasks.html" beforeDir="false" afterPath="$PROJECT_DIR$/works/laboratory_works/lw_7/templates/tasks.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,16 +61,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HttpClientOnboardingState"><![CDATA[{
-  "isOnboardingCommentShown": true
-}]]></component>
+  <component name="HttpClientOnboardingState">{
+  &quot;isOnboardingCommentShown&quot;: true
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6,
-  "fromUser": false
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6,
+  &quot;fromUser&quot;: false
+}</component>
   <component name="ProjectId" id="3DQuQX9wHjZsnOK6iGyR6WJJT2A" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -49,14 +80,16 @@
   "keyToString": {
     "DefaultHtmlFileTemplate": "HTML File",
     "HTTP Request.create_task | 1. Успешное создание задачи (POST /tasks).executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.app (1).executor": "Run",
     "Python.app.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "/Users/fasticker/PycharmProjects/Labs/works/individual_work",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/Users/fasticker/PycharmProjects/Labs/works/individual_work/indiv/screen",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
@@ -70,6 +103,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/works/individual_work/indiv/screen" />
       <recent name="$PROJECT_DIR$/works/individual_work" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,7 +111,33 @@
       <recent name="$PROJECT_DIR$/works/laboratory_works" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.app (1)">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.9 (Bitus_Igor_IA2504)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/works/individual_work/indiv" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/works/individual_work/indiv/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Python" />
       <option name="ENV_FILES" value="" />
@@ -87,8 +147,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.9 (Labs)" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/works/laboratory_works/lw_7" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
@@ -103,8 +164,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.app (1)" />
+      <item itemvalue="Python.app" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.app (1)" />
         <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
@@ -123,7 +189,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1778226601668</updated>
-      <workItem from="1778226606920" duration="11045000" />
+      <workItem from="1778226606920" duration="11815000" />
+      <workItem from="1778282530138" duration="45000" />
+      <workItem from="1778632681361" duration="2300000" />
     </task>
     <servers />
   </component>
@@ -131,6 +199,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Labs$app.coverage" NAME="app Coverage Results" MODIFIED="1778237553270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/works/laboratory_works/lw_7" />
+    <SUITE FILE_PATH="coverage/Labs$app.coverage" NAME="app Coverage Results" MODIFIED="1778632883886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/works/laboratory_works/lw_7" />
+    <SUITE FILE_PATH="coverage/Labs$app__1_.coverage" NAME="app (1) Coverage Results" MODIFIED="1778633919446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/works/individual_work/indiv" />
   </component>
 </project>

@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Edit Task</h1>
+
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+
+        <input type="text" name="title" value="{{ task.title }}" required><br><br>
+
+        <textarea name="description" required>{{ task.description }}</textarea><br><br>
+
+        <input type="text" name="category" value="{{ task.category }}" required><br><br>
+
+        <input type="number" name="priority" value="{{ task.priority }}" min="1" max="5" required><br><br>
+
+        <label for="due_date">Due date:</label>
+        <input type="date" id="due_date" name="due_date" value="{{ task.due_date if task.due_date else '' }}"><br><br>
+
+        <button type="submit">Save</button>
+
+    </form>
+
+{% endblock %}

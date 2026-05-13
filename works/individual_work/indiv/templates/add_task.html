@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Add Task</h1>
+
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+
+    <form method="POST">
+
+        <input type="text" name="title" placeholder="Title" required><br><br>
+
+        <textarea name="description" placeholder="Description" required></textarea><br><br>
+
+        <input type="text" name="category" placeholder="Category" required><br><br>
+
+        <input type="number" name="priority" placeholder="Priority (1-5)" min="1" max="5" required><br><br>
+
+        <label for="due_date">Due date:</label>
+        <input type="date" id="due_date" name="due_date"><br><br>
+
+        <button type="submit">Add</button>
+
+    </form>
+
+{% endblock %}

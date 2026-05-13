@@ -2,24 +2,24 @@
 
 {% block content %}
 
-<h1>All Tasks</h1>
+    <h1>All Tasks</h1>
 
-<a href="/tasks?sort=priority">Sort by priority</a>
+    <a href="/tasks?sort=priority">Sort by priority</a>
 
-<ul>
-    {% for task in tasks %}
-    <li>
-        <a href="/tasks/{{ task.id }}">
-            {{ task.title }}
-        </a>
+    <ul>
+        {% for task in tasks %}
+            <li>
+                <a href="/tasks/{{ task.id }}">
+                    {{ task.title }}
+                </a>
 
-        | Priority: {{ task.priority }}
+                | Priority: {{ task.priority }}
 
-        | <a href="/edit/{{ task.id }}">Edit</a>
+                | <a href="/edit/{{ task.id }}">Edit</a>
 
-        | <a href="/delete/{{ task.id }}">Delete</a>
-    </li>
-    {% endfor %}
-</ul>
+                | <a href="/delete/{{ task.id }}">Delete</a>
+            </li>
+        {% endfor %}
+    </ul>
 
 {% endblock %}

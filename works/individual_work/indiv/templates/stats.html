@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Statistics</h1>
+
+    <p>Total active tasks: <strong>{{ total_tasks }}</strong></p>
+    <p>Average priority: <strong>{{ avg_priority|round(2) if avg_priority else 'N/A' }}</strong></p>
+    <p>Overdue tasks: <strong>{{ overdue }}</strong></p>
+
+    <h2>By Category</h2>
+    <ul>
+        {% for cat in categories %}
+            <li>{{ cat.category }}: {{ cat.count }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

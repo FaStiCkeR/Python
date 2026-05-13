@@ -23,27 +23,63 @@ def init_db():
     cursor.execute("""
                    CREATE TABLE IF NOT EXISTS tasks
                    (
-                       id          INTEGER PRIMARY KEY AUTOINCREMENT,
-                       title       TEXT    NOT NULL,
-                       description TEXT    NOT NULL,
-                       category    TEXT    NOT NULL,
-                       priority    INTEGER NOT NULL,
-                       created_at  TEXT    NOT NULL
+                       id
+                       INTEGER
+                       PRIMARY
+                       KEY
+                       AUTOINCREMENT,
+                       title
+                       TEXT
+                       NOT
+                       NULL,
+                       description
+                       TEXT
+                       NOT
+                       NULL,
+                       category
+                       TEXT
+                       NOT
+                       NULL,
+                       priority
+                       INTEGER
+                       NOT
+                       NULL,
+                       created_at
+                       TEXT
+                       NOT
+                       NULL
                    )
                    """)
 
     cursor.execute("""
                    CREATE TABLE IF NOT EXISTS deleted_tasks
                    (
-                       deleted_id  INTEGER PRIMARY KEY AUTOINCREMENT,
-                       original_id INTEGER,
-                       title       TEXT,
-                       description TEXT,
-                       category    TEXT,
-                       priority    INTEGER,
-                       created_at  TEXT,
-                       deleted_at  TEXT DEFAULT (datetime('now', 'localtime'))
-                   );
+                       deleted_id
+                       INTEGER
+                       PRIMARY
+                       KEY
+                       AUTOINCREMENT,
+                       original_id
+                       INTEGER,
+                       title
+                       TEXT,
+                       description
+                       TEXT,
+                       category
+                       TEXT,
+                       priority
+                       INTEGER,
+                       created_at
+                       TEXT,
+                       deleted_at
+                       TEXT
+                       DEFAULT (
+                       datetime
+                   (
+                       'now',
+                       'localtime'
+                   ))
+                       );
                    """)
 
     conn.commit()
